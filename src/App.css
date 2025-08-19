@@ -1,0 +1,306 @@
+@media (prefers-reduced-motion: no-preference) {
+  * {
+    scroll-behavior: smooth;
+  }
+}
+* {
+    text-align: center;
+}
+a {
+    text-decoration: none;
+}
+.flex-element {
+    display: flex;
+}
+.gta-brand-div, footer {
+    align-items: center;
+}
+.pointer-element {
+    cursor: pointer;
+}
+ul {
+    list-style-type: none;
+    padding: 0;
+    line-height: 1.5;
+}
+body, .normal-nav-item:hover {
+    color: black;
+}
+.a-h2, form > label, ul > .lesson-item, .testimonial > .review {
+    color: white;
+}
+html, body {
+    height: 100%;
+}
+html, body, header {
+    width: 100%;
+}
+section {
+    padding: 15px;
+    min-height: 400px;
+}
+header, form > .submit {
+    background: white;
+}
+.a-section {
+    background: black;
+}
+.b-section {
+    background: rgb(245, 245, 245);
+}
+h1 { 
+    font-size: clamp(11px, 1.5vw, 22px);
+    margin-left: 3.25vw;
+    font-family: Roboto, sans-serif;
+}
+header {
+    position: fixed;
+}
+#wide-normal-header-div, footer {
+    justify-content: space-evenly;
+    height: clamp(35px, 3.5vw, 65px);
+}
+#normal-nav > ul {
+    margin: 0;
+    height: 100%;
+    align-items: center;
+}
+.normal-nav-item {
+    margin-right: max(10px, 2.25vw);
+    font-family: times new roman, Roboto;
+    color: rgb(75, 75, 75);
+    font-size: clamp(12.5px, 1.1vw, 20px);
+    transition: 0.35s;
+    transition-property: color;
+}
+.gta-logo {
+    border-radius: 50%;
+    height: clamp(25px, 3vw, 50px);
+}
+#lessons {
+    margin-top: max(70px, 7vw); 
+    scroll-margin-top: max(100px, 5vw);
+}
+#demos, #testimonials {
+    margin-bottom: max(80px, 9vw);
+}
+h2 {
+    margin-top: max(30px, 3vw);
+    margin-bottom: max(50px, 4vw);
+    font-size: max(30px, 3vw);
+    scroll-margin-top: max(70px, 6.5vw);
+}
+p, ul > li {
+    font-family: serif, Roboto;
+    font-size: max(1.5vw, 15.5px);
+}   
+form > label {
+    font-family: serif, Roboto;
+    font-size: max(1.75vw, 14px);
+} 
+ul > .lesson-item, ul > .bio-item {
+    margin-bottom: max(16px, 1.4vw)
+}
+ul > .lesson-item:last-of-type, ul > .bio-item:last-of-type {
+    padding-bottom: 0.75vw;
+}
+iframe {
+    border: 0.1vw solid white;
+    width: 60vw;
+    height: 40vw;
+    min-width: 175px;
+    min-height: 150px;
+    margin-bottom: 8vw;
+    border-radius: 4%;
+}
+.gnitou-image {
+    height: max(325px, 35vw);
+    margin: max(1.25vw, 20px) 2.25vw max(2.25vw, 45px) 2.25vw;
+    font-size: 1.5vw;
+}
+.testimonial {
+    background: linear-gradient(90deg, rgba(0, 0, 139, 0.75), rgba(173, 216, 230, 0.75));
+    border-radius: 1.75vw;
+    border: 0.20vw solid blue;
+    min-width: 300px;
+    width: 60vw;
+    max-width: 600px;
+    margin: 0 auto 7.5vw;
+    padding: 0 3vw;
+}
+.review {
+    line-height: 1.75;
+    font-size: max(1.75vw, 12.5px);
+}
+.reviewer {
+    flex-direction: column;
+    letter-spacing: 0.08vw;
+    font-size: max(1.5vw, 10px);
+    margin-block: max(7.5px, 4vw) max(3px, 1.5vw);
+    color: lightblue;
+}
+.rating {
+    margin-top: max(2.4px, 1.2vw);
+    letter-spacing: max(8px, 1.4vw);
+}
+.quotes {
+    font-size: max(2vw, 10px);
+}
+form {
+    border: 0.2vw solid black;
+    border-radius: min(25px, 7vw);
+    margin: 1.25vw auto 2vw;
+    padding: 1.25vw 5vw 0;
+    width: 66vw;
+    min-width: 300px;
+    max-width: 1100px;
+    min-height: 375px;
+    background: linear-gradient(rgba(30, 30, 30, 0.75), rgba(90, 90, 90, 0.75));
+}
+form > .user-info {
+    font-family: times new roman, Roboto;
+    margin: max(10px, 1.5vw) auto max(25px, 2.75vw);
+    padding-left: clamp(4px, 0.5vw, 10px);
+    font-size: max(14px, 1.4vw);
+    text-align: left;
+    display: block;
+    width: clamp(100px, 35vw, 570px);
+    height: clamp(10px, 19vw, 400px);
+}
+form > .user-info:focus {
+    outline: none;
+    box-shadow: 0 clamp(1.5px, 0.3vw, 3px) rgb(15, 82, 186);
+}
+form > .user-info:not(#additional-user-info) {
+    border: 0;
+    border-radius: clamp(2px, 1vw, 10px);
+    height: clamp(5px, 3.75vw, 55px);
+    width: clamp(30px, 21.5vw, 270px);
+}
+form > select {
+    margin-top: 1vw; 
+    font-size: 100px;
+}
+form > #referral, form > #level {
+    font-size: clamp(7px, 1.6vw, 19px);
+}
+form > textarea {
+    height: max(55px, 7vw);
+    min-width: 125px;
+    border-radius: max(4px, 0.5vw);
+    border: 0;
+}
+form > .submit {
+    margin: max(12.5px, 1.25vw) auto 3vw;
+    font-weight: bold;
+    font-size: max(7.5px, 1.25vw);
+    border-radius: 0.75vw;
+    border: none;
+    height: max(15px, 3vw);
+    width: max(65px, 17.5vw);
+}
+form > .submit:hover {
+    outline: black solid max(1.4px, 0.3vw);
+}
+form > .submit:active {
+    opacity: 0.8;
+}
+footer {
+    background: rgb(240, 240, 240);
+}
+.social-icon {
+    transition: hover 0.15s, opacity 0.15s;
+    margin-right: clamp(14px, 3vw, 25px); 
+    border-radius: 50%;
+    height: clamp(10px, 3.2vw, 23px);
+    font-size: 0.5vw;
+    filter: grayscale(0.5);
+}
+.social-icon:hover {
+    transform: scale(1.15);
+}
+.social-icon:active {
+    opacity: 0.6;
+}
+.contact-icon {
+    font-size: clamp(9px, 1.25vw, 15px);
+    margin-right: max(5px, 3.5vw);
+    color: rgb(75, 75, 75);
+    transition: 0.35s;
+    transition-property: color;
+}
+.contact-icon:hover {
+    color: black;
+}
+@media screen and (max-width: 900px) {
+    header {
+        cursor: pointer;
+    }
+    #narrow-normal-header-div {
+        height: 100%;
+        justify-content: space-evenly;
+        padding-bottom: 0;
+        align-items: center;
+    }
+    #drop-down-x {
+        line-height: 1.4;
+        font-size: 20px;
+        font-weight: bold;
+    }
+    #drop-down-header-div {
+        background: white;
+        height: max(240px, 35vw);
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    #drop-down-upper-half {
+        width: 100%;
+        justify-content: space-evenly;
+        align-items: center;
+        position: fixed;
+        top: 0;
+    }
+    #drop-down-bars { 
+        color: black;
+        line-height: 0.4;
+        font-size: max(12.5px, 1vw);
+        font-weight: bold;
+        margin-top: 5px;
+    }
+    #drop-down-nav { 
+        margin: min(45px, 5vw) auto 0;
+        width: 100%;
+    }
+    #drop-down-nav > ul {
+        margin: 0 auto;
+    }
+    #drop-down-nav > ul > li {
+        margin-left: 2.5vw;
+        width: 100%;
+    }
+    .drop-down-nav-item {
+        display: block;
+        text-align: left;
+        font-family: times new roman, Roboto;
+        color: rgb(75, 75, 75);
+        font-size: clamp(14px, 2vw, 17px);
+        line-height: 2.7; 
+    }
+    .drop-down-nav-item:hover  {
+        color: black;
+    }
+}
+@media screen and (max-width: 695px) {
+    .gnitou-image {
+        width: max(325px, 55vw); 
+        height: auto; 
+        font-size: 1.5vw;
+        margin-top: 40px auto auto;
+    }
+    .gnitou-image:last-of-type {
+        margin-top: 40px;
+        margin-bottom: 60px;
+    }  
+}
+
