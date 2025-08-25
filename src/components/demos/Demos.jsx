@@ -8,7 +8,9 @@ export default function DemosSection() {
     return (
       <section id = "demos-section" className="a-section">
         <h2 id = "demos" className="a-h2">See Coach Gnitou's Coaching</h2>
-        {demos}
+        <swiper-container className="demos-container" pagination-clickable="true" navigation="true" loop="true">
+          {demos}
+         </swiper-container>
       </section>
     )
   }

@@ -5,6 +5,7 @@
 }
 * {
     text-align: center;
+    box-sizing: border-box;
 }
 a {
     text-decoration: none;
@@ -55,6 +56,7 @@ h1 {
 }
 header {
     position: fixed;
+    z-index: 1; 
 }
 #wide-normal-header-div, footer {
     justify-content: space-evenly;
@@ -104,19 +106,46 @@ ul > .lesson-item, ul > .bio-item {
 ul > .lesson-item:last-of-type, ul > .bio-item:last-of-type {
     padding-bottom: 0.75vw;
 }
+.demos-container {
+    position: relative;
+    z-index: 0;
+    margin-bottom: 5vw;
+    min-width: 175px;
+    width: 60vw;
+    min-height: 150px;
+    --swiper-navigation-color: blue;
+    --swiper-pagination-color: yellow;
+    --swiper-navigation-size: min(3.5vw, 40px);
+    --swiper-navigation-top-offset: max(20vw, 65px); 
+    --swiper-navigation-sides-offset: max(1.5vw, 15px); 
+    --swiper-pagination-bullet-inactive-color: white; 
+}
 iframe {
     border: 0.1vw solid white;
     width: 60vw;
     height: 40vw;
     min-width: 175px;
     min-height: 150px;
-    margin-bottom: 8vw;
+    margin-bottom: min(6vw, 80px);
     border-radius: 4%;
 }
 .gnitou-image {
     height: max(325px, 35vw);
     margin: max(1.25vw, 20px) 2.25vw max(2.25vw, 45px) 2.25vw;
     font-size: 1.5vw;
+}
+.testimonials-container {
+    position: relative;
+    z-index: 0;
+    margin-bottom: 5vw;
+    min-width: 300px;
+    width: 60vw;
+    max-width: 600px;
+    --swiper-navigation-color: green;
+    --swiper-navigation-size: min(3.5vw, 40px);
+    --swiper-navigation-top-offset: max(12vw, 70px); 
+    --swiper-navigation-sides-offset: max(1.5vw, 15px);  
+    --swiper-pagination-color: lightblue;
 }
 .testimonial {
     background: linear-gradient(90deg, rgba(0, 0, 139, 0.75), rgba(173, 216, 230, 0.75));
@@ -125,7 +154,7 @@ iframe {
     min-width: 300px;
     width: 60vw;
     max-width: 600px;
-    margin: 0 auto 7.5vw;
+    margin: 0 auto min(4.5vw, 45px);
     padding: 0 3vw;
 }
 .review {
@@ -136,11 +165,11 @@ iframe {
     flex-direction: column;
     letter-spacing: 0.08vw;
     font-size: max(1.5vw, 10px);
-    margin-block: max(7.5px, 4vw) max(3px, 1.5vw);
+    margin-top: max(5px, 3vw);
     color: lightblue;
 }
 .rating {
-    margin-top: max(2.4px, 1.2vw);
+    margin-top: max(6px, 7vw);
     letter-spacing: max(8px, 1.4vw);
 }
 .quotes {
@@ -171,7 +200,7 @@ form > .user-info:focus {
     outline: none;
     box-shadow: 0 clamp(1.5px, 0.3vw, 3px) rgb(15, 82, 186);
 }
-form > .user-info:not(#additional-user-info) {
+form > .user-info:not(#additional-comments) {
     border: 0;
     border-radius: clamp(2px, 1vw, 10px);
     height: clamp(5px, 3.75vw, 55px);
@@ -303,4 +332,3 @@ footer {
         margin-bottom: 60px;
     }  
 }
-
