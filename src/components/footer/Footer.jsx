@@ -1,7 +1,7 @@
-import facebook from '../../images/facebook.jpg';
-import instagram from '../../images/instagram.jpg';
-import tiktok from '../../images/tiktok.jpg';
-import youtube from '../../images/youtube.jpg';
+import facebook from '../../images/facebook.jpg'
+import instagram from '../../images/instagram.jpg'
+import tiktok from '../../images/tiktok.jpg'
+import youtube from '../../images/youtube.jpg'
 import Social from './Social'
 
 export default function Footer() {

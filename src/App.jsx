@@ -1,4 +1,4 @@
-import './App.css';
+import './App.css'
 import Header from './components/header/Header'
 import Lessons from './components/lessons/Lessons'
 import Demos from './components/demos/Demos'

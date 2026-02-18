@@ -1,5 +1,5 @@
-import gnitou_with_student from '../../images/gnitou-with-student.jpg';
-import gnitou_with_player from '../../images/gnitou-with-player.jpg';
+import gnitou_with_student from '../../images/gnitou-with-student.jpg'
+import gnitou_with_player from '../../images/gnitou-with-player.jpg'
 
 export default function BioSection() {
     return (

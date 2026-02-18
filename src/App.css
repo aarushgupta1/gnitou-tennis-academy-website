@@ -59,8 +59,30 @@ header {
     z-index: 1; 
 }
 #wide-normal-header-div, footer {
+    display: flex;
+    align-items: center;
     justify-content: space-evenly;
     height: clamp(35px, 3.5vw, 65px);
+}
+.header-div {
+    background: white;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: opacity 300ms ease, transform 300ms ease;
+
+  pointer-events: none;
+}
+.header-div.visible {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+  padding-right: 0;
+  margin-right: 0;
+  width: 100%;
 }
 #normal-nav > ul {
     margin: 0;
@@ -78,6 +100,8 @@ header {
 .gta-logo {
     border-radius: 50%;
     height: clamp(25px, 3vw, 50px);
+    margin-top: 2.5px;
+
 }
 #lessons {
     margin-top: max(70px, 7vw); 
@@ -118,7 +142,9 @@ ul > .lesson-item:last-of-type, ul > .bio-item:last-of-type {
     --swiper-navigation-size: min(3.5vw, 40px);
     --swiper-navigation-top-offset: max(20vw, 65px); 
     --swiper-navigation-sides-offset: max(1.5vw, 15px); 
-    --swiper-pagination-bullet-inactive-color: white; 
+    --swiper-pagination-bullet-inactive-color: white;
+    --swiper-pagination-top: max(180px, 42.5vw);
+    --swiper-pagination-bullet-horizontal-gap: 7.5px; 
 }
 iframe {
     border: 0.1vw solid white;
@@ -126,8 +152,10 @@ iframe {
     height: 40vw;
     min-width: 175px;
     min-height: 150px;
-    margin-bottom: min(6vw, 80px);
     border-radius: 4%;
+}
+.demo {
+    margin-bottom: min(10vw, 100px);
 }
 .gnitou-image {
     height: max(325px, 35vw);
@@ -146,6 +174,9 @@ iframe {
     --swiper-navigation-top-offset: max(12vw, 70px); 
     --swiper-navigation-sides-offset: max(1.5vw, 15px);  
     --swiper-pagination-color: lightblue;
+    --swiper-pagination-top: clamp(150px, 25vw, 350px);
+    --swiper-pagination-bullet-horizontal-gap: 7.5px;
+
 }
 .testimonial {
     background: linear-gradient(90deg, rgba(0, 0, 139, 0.75), rgba(173, 216, 230, 0.75));
@@ -154,8 +185,8 @@ iframe {
     min-width: 300px;
     width: 60vw;
     max-width: 600px;
-    margin: 0 auto min(4.5vw, 45px);
-    padding: 0 3vw;
+    margin: 0 auto min(10vw, 100px);
+    height: 100%;
 }
 .review {
     line-height: 1.75;
@@ -262,35 +293,39 @@ footer {
     color: black;
 }
 @media screen and (max-width: 900px) {
-    header {
-        cursor: pointer;
-    }
+
     #narrow-normal-header-div {
+        width: 100%;
         height: 100%;
-        justify-content: space-evenly;
         padding-bottom: 0;
+        justify-content: space-evenly;
+        display: flex;
         align-items: center;
-    }
-    #drop-down-x {
-        line-height: 1.4;
-        font-size: 20px;
-        font-weight: bold;
     }
     #drop-down-header-div {
-        background: white;
         height: max(240px, 35vw);
-        flex-direction: column;
-        justify-content: space-evenly;
-        align-items: center;
+        align-items: center;     
+        top: 0;
     }
     #drop-down-upper-half {
+        height: 32.5px;
         width: 100%;
         justify-content: space-evenly;
+        display: flex;
         align-items: center;
         position: fixed;
         top: 0;
     }
+    #drop-down-x {
+        cursor: pointer;
+        line-height: 1.4;
+        font-size: max(15px, 2vw);
+        font-weight: bold;
+        margin-top: min(25px, 3vw);
+    }
     #drop-down-bars { 
+        display: inline-block;
+        cursor: pointer;
         color: black;
         line-height: 0.4;
         font-size: max(12.5px, 1vw);
@@ -298,7 +333,7 @@ footer {
         margin-top: 5px;
     }
     #drop-down-nav { 
-        margin: min(45px, 5vw) auto 0;
+        margin: clamp(50px, 7.5vw, 100px) auto 0;
         width: 100%;
     }
     #drop-down-nav > ul {
@@ -321,6 +356,9 @@ footer {
     }
 }
 @media screen and (max-width: 695px) {
+    #drop-down-x {
+        margin-top: min(18px, 4.5vw);
+    }
     .gnitou-image {
         width: max(325px, 55vw); 
         height: auto; 

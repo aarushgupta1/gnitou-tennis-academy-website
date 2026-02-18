@@ -1,4 +1,4 @@
-import gnitou_with_children from '../../images/gnitou-with-children.jpg';
+import gnitou_with_children from '../../images/gnitou-with-children.jpg'
 
 export default function LessonsSection() {
     return (
